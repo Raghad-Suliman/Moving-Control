@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+ <head>
+     <title>Control panel</title>
+  <body>
+      
+<style>
+
+input[type=text]{
+  border-style: groove;
+  border-width: 0px;
+  border-color:rgb(253, 112, 112); 
+}
+body {background-color: rgb(255, 255, 255);}
+center {background-color: rgb(255, 255, 255);}
+.slider {
+  -webkit-appearance: none;
+  width: 25%;
+  height: 25px;
+  background: #a4e7af;
+  outline: none;
+  opacity: 0.7; 
+}
+
+.button {
+              display: inline-block;
+              padding: 15px 25px;
+              font-size: 24px;
+              cursor: pointer;
+              text-align: center;
+              text-decoration: none;
+              outline: none;
+              color: #fff;
+              background-color: #2cbd50;
+              border: none;
+              border-radius: 15px;
+              box-shadow: 0 9px #999;
+            }
+
+
+            .buttonS {background-color: #f44336;}
+           
+            .button:hover {background-color: #a9aaa9}
+            
+            .button:active {
+              background-color: #eaecea;
+              box-shadow: 0 5px #666;
+              transform: translateY(4px);
+            }
+
+           
+            footer{
+      background-color: #ffffff;
+     
+      height: 21em;
+      font-size: 18px;}
+      .fotterc{
+        margin: 0.3em;
+        padding: 0.1;
+        float: left;
+        width: 30%;
+        padding: 1px;
+        height: 300px; 
+        text-align: right;
+      }
+
+</style>
+<center>
+    <form action=" " method="post">
+
+        <label for="vol"> Motor 1 </label>
+        <input type="range"  min="0" max="180" value="0" id="get" class="slider" onchange="fetch()">
+                    <input type="text" id="put" placeholder="0"  name="Base" </input>
+        <br>
+        <label for="vol"> Motor 2 </label>
+        <input type="range"  min="0" max="180" value="0" id="get1" class="slider" onchange="fetch1()">
+                    <input type="text" id="put1" placeholder="0" name="Base" </input>
+        <br>
+        <label for="vol"> Motor 3 </label>
+        <input type="range"  min="0" max="180" value="0" id="get2" class="slider" onchange="fetch2()">
+        <input type="text" id="put2" placeholder="0" name="Base" </input>
+        <br>
+        <label for="vol"> Motor 4 </label>
+        <input type="range"  min="0" max="180" value="0" id="get3" class="slider" onchange="fetch3()">
+                    <input type="text" id="put3" placeholder="0" name="Base" </input>
+        <br>
+        <label for="vol"> Motor 5 </label>
+        <input type="range"  min="0" max="180" value="0" id="get4" class="slider" onchange="fetch4()">
+                    <input type="text" id="put4" placeholder="0" name="Base" </input>
+
+        <br>
+        <label for="vol"> Motor 6 </label>
+        <input type="range"  min="0" max="180" value="0" id="get5" class="slider" onchange="fetch5()">
+                    <input type="text" id="put5" placeholder="0" name="Base" </input>
+                       <br>
+                        <input type="submit" value="Save"></input>
+                        <input type="submit" value="Run"></input>
+      </form>
+
+      <script class="numbwers">
+        function fetch() {
+            let get = document.getElementById("get").value;
+            document.getElementById("put").value = get;
+        }
+        function fetch1() {
+            let get = document.getElementById("get1").value;
+            document.getElementById("put1").value = get;
+        }
+        function fetch2() {
+            let get = document.getElementById("get2").value;
+            document.getElementById("put2").value = get;
+        }
+        function fetch3() {
+            let get = document.getElementById("get3").value;
+            document.getElementById("put3").value = get;
+        }
+        function fetch4() {
+            let get = document.getElementById("get4").value;
+            document.getElementById("put4").value = get;
+        }
+        function fetch5() {
+            let get = document.getElementById("get5").value;
+            document.getElementById("put5").value = get;
+        }
+    </script>
+   </center>
+
+    <form action="MovingControl.php" method="post">
+
+        <footer>     
+          
+                <div class ="fotterc">
+                   
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <input type="button" value="Left" class="button" id="L" >
+                </div>
+
+                <div class ="fotterc">
+                    <br>
+                    <br>
+                    <center><input type="button"  value="Forward" class="button" id="F" > </center><br>
+                    <br>
+                    <br>
+                    <br>
+                    <center><input type="submit"  value="Stop" class="button buttonS" id="S" > </center><br>
+                    <br> 
+                    <br>
+                    <br>
+                   <center><input type="button"  value="Backward" class="button" id="B" > </center>
+               
+                </div>
+        
+             <div>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <input type="button" value="Right" class="button buttonR" id="R" >
+            </div>
+        
+        </footer>
+    </form>
+
+  </body>
+ </head>
+</html>
+
+
+
+

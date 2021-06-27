@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Control</title>
+        <style>
+            
+             body {background-color: rgb(255, 255, 255);}
+            
+            .button {
+              display: inline-block;
+              padding: 15px 25px;
+              font-size: 24px;
+              cursor: pointer;
+              text-align: center;
+              text-decoration: none;
+              outline: none;
+              color: #fff;
+              background-color: #2cbd50;
+              border: none;
+              border-radius: 15px;
+              box-shadow: 0 9px #999;
+            }
+
+            .buttonS {background-color: #f44336;}
+           
+            .button:hover {background-color: #a9aaa9}
+            
+            .button:active {
+              background-color: #eaecea;
+              box-shadow: 0 5px #666;
+              transform: translateY(4px);
+            }
+
+           
+            footer{
+      background-color: #ffffff;
+     
+      height: 21em;
+      font-size: 18px;}
+      .fotterc{
+        margin: 0.3em;
+        padding: 0.1;
+        float: left;
+        width: 30%;
+        padding: 1px;
+        height: 300px; 
+        text-align: right;
+      }
+            
+            </style>
+        <body>
+
+            <form action="MovingControl.php" method="post">
+
+            <footer>     
+              
+                    <div class ="fotterc">
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <input type="button" value="Left" class="button" id="L" >
+                    </div>
+
+                    <div class ="fotterc">
+                      <br>
+                      <br>
+                      <br>
+                      <br>
+                      <br>
+                        <center><input type="button"  value="Forward" class="button" id="F" > </center><br>
+                        <br>
+                        <br>
+                        <br>
+                        <center><input type="submit"  value="Stop" class="button buttonS" id="S" > </center><br>
+                        <br> 
+                        <br>
+                        <br>
+                       <center><input type="button"  value="Backward" class="button" id="B" > </center>
+                   
+                    </div>
+            
+                 <div>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                    <br>
+                        <br>
+                    <input type="button" value="Right" class="button buttonR" id="R" >
+                </div>
+            
+            </footer>
+        </form>
+        </body>
+    </head>
+</html>
