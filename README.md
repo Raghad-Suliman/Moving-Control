@@ -1,1 +1,5 @@
 # Moving-Control
+
+This repository contains files related to the second task of the IOT path, the task of controlling the movement of the base, where there is an html code for the base control panel page and contains 5 buttons that can be controlled to control the movement of the base. It also contains a database that includes 5 buttons and a php code that connects the database to the buttons In the base control panel, it contains another html code that integrates between the two interfaces of the arm control of the first task and the base control of the second task, and it contains images to transform the interface and display it as a mobile web view
+
+هذا الريبوزتري يحتوي على ملفات تخص المهمة الثانية من مهمات مسار انترنت الاشياء IOT مهمة التحكم بحركة القاعدة حيث يوجد كود html يخص صفحة لوحة التحكم بالقاعدة ويحتوي على 5 ازرار يمكن التحكم للتحكم بحركة القاعدة ويحتوي أيضا على قاعدة بيانات تضم 5 ازرار وكود php يربط قاعدة البيانات بالازرار في لوحة التحكم بالقاعدة، ويحتوي على كود  html اخر يدمج مابين واجهتي التحكم بالذراع التابع للمهمة الأولى والتحكم بالقاعدة الخاص بالمهمة الثانية ، ويحتوي على صور لتحويل الواجهة وعرضها كـ mobile web view 
